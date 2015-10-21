@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8E60ECE3-55DF-567B-0B6E-845A0AB1DA30" name="F15_C3_Document">
+<createdBy>David</createdBy>
+<createdTime>2015-10-19 22:01:33 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="A2C62166-BE8C-9332-0A83-ECA351A05354" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="document_id" id="B72EF928-8C01-3722-4B8D-AEE8AA5D93F4">
+<createdBy>David</createdBy>
+<createdTime>2015-10-19 22:01:43 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="A2C62166-BE8C-9332-0A83-ECA351A05354" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B699EB84-B467-47DC-6EAE-E7B3E8AE7250" name="F15_C3_Document PK">
+<createdBy>David</createdBy>
+<createdTime>2015-10-19 22:01:51 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="A2C62166-BE8C-9332-0A83-ECA351A05354" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B72EF928-8C01-3722-4B8D-AEE8AA5D93F4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

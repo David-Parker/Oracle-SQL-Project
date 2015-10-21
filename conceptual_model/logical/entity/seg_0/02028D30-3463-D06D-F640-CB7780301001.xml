@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="02028D30-3463-D06D-F640-CB7780301001" name="RFE_Contacts">
+<createdBy>David</createdBy>
+<createdTime>2015-10-19 18:59:18 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="A2C62166-BE8C-9332-0A83-ECA351A05354" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RFE_ID " id="A68CD63C-232D-FDD9-4732-21763FEF1423">
+<createdBy>David</createdBy>
+<createdTime>2015-10-19 18:59:32 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="A2C62166-BE8C-9332-0A83-ECA351A05354" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONTACT_ROLE_CODE" id="64A65A76-A009-3A04-6D78-EE36B8C291F4">
+<createdBy>David</createdBy>
+<createdTime>2015-10-19 18:59:39 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="A2C62166-BE8C-9332-0A83-ECA351A05354" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONTACT_EMP_ID" id="A17B76E8-43E0-7F42-0720-E27F7D30E26F">
+<createdBy>David</createdBy>
+<createdTime>2015-10-19 18:59:54 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="A2C62166-BE8C-9332-0A83-ECA351A05354" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EFFECTIVE_DATE " id="016C0ACB-23F5-BE76-9D4D-1FC51FB93440">
+<createdBy>David</createdBy>
+<createdTime>2015-10-19 19:00:03 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="A2C62166-BE8C-9332-0A83-ECA351A05354" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COMMENTS" id="5401E8E7-1EDB-1F3A-AA08-A56E59911DEC">
+<createdBy>David</createdBy>
+<createdTime>2015-10-19 19:00:10 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="A2C62166-BE8C-9332-0A83-ECA351A05354" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="43AEDAB1-20AE-0139-5F9B-94C0B68D1B4F" name="RFE_Contacts PK">
+<createdBy>David</createdBy>
+<createdTime>2015-10-19 18:59:39 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="A2C62166-BE8C-9332-0A83-ECA351A05354" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A68CD63C-232D-FDD9-4732-21763FEF1423</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

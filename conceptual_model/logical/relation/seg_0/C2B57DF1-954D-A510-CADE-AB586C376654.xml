@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="r5" directorySegmentName="seg_0" id="C2B57DF1-954D-A510-CADE-AB586C376654">
+<createdBy>David</createdBy>
+<createdTime>2015-10-19 21:41:16 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="A2C62166-BE8C-9332-0A83-ECA351A05354" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>12F91B0B-D4DC-70F9-43A3-DD8A324925BC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>53F45DA2-9D5A-06A0-FD8D-5101F85D04D4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="reviewers" id="5197A921-17AA-7F43-DE9C-58F44090F96B">
+<createdBy>David</createdBy>
+<createdTime>2015-10-19 21:41:21 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="A2C62166-BE8C-9332-0A83-ECA351A05354" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>
