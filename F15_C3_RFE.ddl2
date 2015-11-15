@@ -1,0 +1,182 @@
+DROP SEQUENCE F15_C3_Auth_seq ; 
+create sequence F15_C3_Auth_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15_C3_Auth_PK_trig 
+; 
+
+create or replace trigger F15_C3_Auth_PK_trig 
+before insert on F15_C3_Auth
+for each row 
+begin 
+select F15_C3_Auth_seq.nextval into :new.auth_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15_C3_Comment_seq ; 
+create sequence F15_C3_Comment_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15_C3_Comment_PK_trig 
+; 
+
+create or replace trigger F15_C3_Comment_PK_trig 
+before insert on F15_C3_Comment
+for each row 
+begin 
+select F15_C3_Comment_seq.nextval into :new.comment_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15_C3_Document_seq ; 
+create sequence F15_C3_Document_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15_C3_Document_PK_trig 
+; 
+
+create or replace trigger F15_C3_Document_PK_trig 
+before insert on F15_C3_Document
+for each row 
+begin 
+select F15_C3_Document_seq.nextval into :new.doc_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15_C3_Lab_seq ; 
+create sequence F15_C3_Lab_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15_C3_Lab_PK_trig 
+; 
+
+create or replace trigger F15_C3_Lab_PK_trig 
+before insert on F15_C3_Lab
+for each row 
+begin 
+select F15_C3_Lab_seq.nextval into :new.lab_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15_C3_RFE_seq ; 
+create sequence F15_C3_RFE_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15_C3_RFE_PK_trig 
+; 
+
+create or replace trigger F15_C3_RFE_PK_trig 
+before insert on F15_C3_RFE
+for each row 
+begin 
+select F15_C3_RFE_seq.nextval into :new.ref_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15_C3_Status_Code_seq ; 
+create sequence F15_C3_Status_Code_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15_C3_Status_Code_PK_trig 
+; 
+
+create or replace trigger F15_C3_Status_Code_PK_trig 
+before insert on F15_C3_Status_Code
+for each row 
+begin 
+select F15_C3_Status_Code_seq.nextval into :new.status_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15_C3_Sts_His_seq ; 
+create sequence F15_C3_Sts_His_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15_C3_Sts_His_PK_trig 
+; 
+
+create or replace trigger F15_C3_Sts_His_PK_trig 
+before insert on F15_C3_Sts_His
+for each row 
+begin 
+select F15_C3_Sts_His_seq.nextval into :new.his_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15_C3_Task_seq ; 
+create sequence F15_C3_Task_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15_C3_Task_PK_trig 
+; 
+
+create or replace trigger F15_C3_Task_PK_trig 
+before insert on F15_C3_Task
+for each row 
+begin 
+select F15_C3_Task_seq.nextval into :new.task_id from dual; 
+end; 
+/
+
+DROP SEQUENCE F15_C3_employee_seq ; 
+create sequence F15_C3_employee_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15_C3_employee_PK_trig 
+; 
+
+create or replace trigger F15_C3_employee_PK_trig 
+before insert on F15_C3_employee
+for each row 
+begin 
+select F15_C3_employee_seq.nextval into :new.emp_id from dual; 
+end; 
+/
+
+-- Table Relation_11 has a compound primary key so no sequence or trigger was created for it.
+-- Table approvers has a compound primary key so no sequence or trigger was created for it.
+-- Table contacts has a compound primary key so no sequence or trigger was created for it.
+DROP INDEX F15_C3_employee_emp_id_FK_1 ;
+CREATE INDEX F15_C3_employee_emp_id_FK_1 ON F15_C3_Comment(F15_C3_employee_emp_id) ;
+DROP INDEX F15_C3_RFE_ref_id_FK_2 ;
+CREATE INDEX F15_C3_RFE_ref_id_FK_2 ON F15_C3_Document(F15_C3_RFE_ref_id) ;
+DROP INDEX F15_C3_Status_Code_sta_FK_3 ;
+CREATE INDEX F15_C3_Status_Code_sta_FK_3 ON F15_C3_RFE(F15_C3_Status_Code_status_id) ;
+DROP INDEX F15_C3_Task_task_id_FK_4 ;
+CREATE INDEX F15_C3_Task_task_id_FK_4 ON F15_C3_RFE(F15_C3_Task_task_id) ;
+DROP INDEX F15_C3_employee_emp_id_FK_5 ;
+CREATE INDEX F15_C3_employee_emp_id_FK_5 ON F15_C3_RFE(F15_C3_employee_emp_id) ;
+DROP INDEX F15_C3_RFE_ref_id_FK_6 ;
+CREATE INDEX F15_C3_RFE_ref_id_FK_6 ON F15_C3_Sts_His(F15_C3_RFE_ref_id) ;
+DROP INDEX F15_C3_Lab_lab_id_FK_8 ;
+CREATE INDEX F15_C3_Lab_lab_id_FK_8 ON F15_C3_employee(F15_C3_Lab_lab_id) ;
+DROP INDEX F15_C3_RFE_ref_id_FK_9 ;
+CREATE INDEX F15_C3_RFE_ref_id_FK_9 ON Relation_11(F15_C3_RFE_ref_id) ;
+DROP INDEX F15_C3_Comment_comment_FK_10 ;
+CREATE INDEX F15_C3_Comment_comment_FK_10 ON Relation_11(F15_C3_Comment_comment_id) ;
+DROP INDEX F15_C3_employee_emp_id_FK_11 ;
+CREATE INDEX F15_C3_employee_emp_id_FK_11 ON approvers(F15_C3_employee_emp_id) ;
+DROP INDEX F15_C3_RFE_ref_id_FK_12 ;
+CREATE INDEX F15_C3_RFE_ref_id_FK_12 ON approvers(F15_C3_RFE_ref_id) ;
+DROP INDEX F15_C3_employee_emp_id_FK_13 ;
+CREATE INDEX F15_C3_employee_emp_id_FK_13 ON contacts(F15_C3_employee_emp_id) ;
+DROP INDEX F15_C3_RFE_ref_id_FK_14 ;
+CREATE INDEX F15_C3_RFE_ref_id_FK_14 ON contacts(F15_C3_RFE_ref_id) ;
