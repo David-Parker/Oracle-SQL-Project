@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="FCDC88C1-4339-C16A-6D54-84483F629D16">
+<createdBy>David</createdBy>
+<createdTime>2015-11-02 22:24:10 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<sourcePk>807E3C70-3D7A-CCE2-05EE-EC1D28FD9071</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>74119953-2DAD-97CA-1DE0-BF46792A6595</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8967A569-363C-7A91-CE2E-ABA4B7467832</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="requestor" id="76C2B921-72F3-CF50-7312-7CA421839A8A">
+<createdBy>David</createdBy>
+<createdTime>2015-11-02 22:24:16 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

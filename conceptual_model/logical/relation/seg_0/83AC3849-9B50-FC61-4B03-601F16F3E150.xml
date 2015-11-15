@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="contacts" directorySegmentName="seg_0" id="83AC3849-9B50-FC61-4B03-601F16F3E150">
+<createdBy>David</createdBy>
+<createdTime>2015-11-02 22:25:14 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>74119953-2DAD-97CA-1DE0-BF46792A6595</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8967A569-363C-7A91-CE2E-ABA4B7467832</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="contacts" id="B301AC25-CEC1-B2A6-F7DE-BF5F4761813E">
+<createdBy>David</createdBy>
+<createdTime>2015-11-02 22:25:23 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>
