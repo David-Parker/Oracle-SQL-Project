@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E1768446-AF33-46F2-311E-441412649D64" name="F15_C3_Autho">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E1768446-AF33-46F2-311E-441412649D64" name="F15_C3_Auth">
 <createdBy>David</createdBy>
 <createdTime>2015-11-02 22:13:03 UTC</createdTime>
 <ownerDesignName>conceptual_model</ownerDesignName>

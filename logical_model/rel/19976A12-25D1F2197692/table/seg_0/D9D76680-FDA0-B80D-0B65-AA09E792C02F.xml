@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9D76680-FDA0-B80D-0B65-AA09E792C02F" name="F15_C3_Task">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>0F6E2D47-BAA9-0541-2A65-D6F32AF8714C</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="task_id" id="4D6BE4ED-3903-CE07-9A0F-A24EADAD325A">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>87D9CF02-00A1-6D47-B806-1804C31E3FDD</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="effective_date" id="B852347D-C1F7-338B-23D0-E1576D6D4EC5">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>F0740176-16C1-6DFE-4288-407E3184E71F</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="task_abbreviation" id="F169703F-1631-081F-C3A9-BEF549332CF3">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>DA0B3FD4-279F-30F1-CBB2-8D1F57156752</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="B098C11C-66CB-A785-10CD-6AA78E12C4DA">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>06A799BF-04E9-214D-187A-199EAA5EF652</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="504AC9CE-8602-7C4E-0EFB-65C9B8C072FC" name="F15_C3_Task_PK">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>1255B351-B3B2-7DDB-556B-9DA77D441ADB</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D6BE4ED-3903-CE07-9A0F-A24EADAD325A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

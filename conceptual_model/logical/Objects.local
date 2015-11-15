@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.logical.LogicalDesign>
    <object objectType="Entity" objectID="1AA11959-D7BE-D31D-962D-6E457DF367A1" name="F15_C3_Admin" seqName="seg_0"/>
-   <object objectType="Entity" objectID="E1768446-AF33-46F2-311E-441412649D64" name="F15_C3_Autho" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E1768446-AF33-46F2-311E-441412649D64" name="F15_C3_Auth" seqName="seg_0"/>
    <object objectType="Entity" objectID="D6452CA2-C326-E306-9CB5-98739F99A78F" name="F15_C3_Chairperson" seqName="seg_0"/>
    <object objectType="Entity" objectID="0E4B1F01-DF47-0D0B-87AD-DCB80710F81A" name="F15_C3_Comment" seqName="seg_0"/>
    <object objectType="Entity" objectID="B1619EAB-EF5B-4B13-3459-0DC39E29E035" name="F15_C3_Document" seqName="seg_0"/>

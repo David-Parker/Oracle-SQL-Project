@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2208958C-1884-1374-13E9-F5B9DE1A0CA5" name="F15_C3_employee">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>74119953-2DAD-97CA-1DE0-BF46792A6595</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="emp_id" id="3A7C0264-DA44-CC93-CBF9-15B9F648ECDC">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>80526CF3-DEAE-D583-B702-CCE562E40C55</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15_C3_Auth_auth_id" id="7B4433DB-BC30-8CC6-9F15-191E426E8523">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>9F057BF8-895D-A69E-6542-57F2705AD799</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="476EB065-872F-6825-E34C-D97AA794713D" referredColumn="0F7F19A5-21AC-B219-1275-64422984A34C"/>
+</associations>
+</Column>
+<Column name="F15_C3_Lab_lab_id" id="72D77533-69C8-F4EE-BCA3-FD9C43BEA369">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>EFF7F7D0-C9CC-5C31-735F-B91A553A8E14</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BAB851C6-0DC8-F492-B8F2-59107AF4FB6A" referredColumn="DC32C199-F9C1-139A-1A62-0B592C357DA7"/>
+</associations>
+</Column>
+<Column name="active" id="4BE283A8-21AA-4E9C-65D3-9AA94E499178">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>48227FF0-844F-C5F8-1177-4BF0CD8A4B89</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="437A31F1-418B-3A9A-DB5D-3B685B0993B7">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>F92352D7-51B5-E8C9-4549-463E7163A182</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="5601EA82-D60D-4088-CA55-0A27EEE07B96">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>703F0180-8331-CB26-AC3C-913B8041E821</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="office" id="077250C1-2F9C-EFEC-FF17-7CA9D249F5A6">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>73858B90-46CE-0415-3AA5-BC4127BDAFFC</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone" id="0135DA5E-0ADA-AF73-1E97-13A7DA9B73F5">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>69438886-D31D-CDE5-E230-669FACC702D5</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_eff_date" id="62716D73-D073-2B9E-A5AC-69725AD046CA">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>DED24823-2A5A-EA33-8AAB-BC999108E6C3</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="A798A3AB-C8F0-1C56-042B-315C441B4C61">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:43:14 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="49B6D975-EF5D-5367-1E14-06CBE2BCFBE5" name="F15_C3_employee_PK">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>807E3C70-3D7A-CCE2-05EE-EC1D28FD9071</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A7C0264-DA44-CC93-CBF9-15B9F648ECDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="070155FD-773E-1634-92F1-146D99451D24" name="F15_C3_employee__IDX">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>49028C26-1A78-CCA0-DFE6-FC859F45CF27</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7B4433DB-BC30-8CC6-9F15-191E426E8523"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1A0F4BD-AC4E-D483-E0A8-0AA344FC2872" name="F15_C3_employee_F15_C3_Auth_FK">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>49028C26-1A78-CCA0-DFE6-FC859F45CF27</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B4433DB-BC30-8CC6-9F15-191E426E8523"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB19DBA0-AB58-93B4-F412-10944503BEF3" name="F15_C3_employee_F15_C3_Lab_FK">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:36:54 UTC</createdTime>
+<generatorID>32D27D3F-7D70-B60F-81BD-3131ECBBFD25</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72D77533-69C8-F4EE-BCA3-FD9C43BEA369"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

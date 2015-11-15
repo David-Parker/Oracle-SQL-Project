@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="FCDC88C1-4339-C16A-6D54-84483F629D16">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="requestor" directorySegmentName="seg_0" id="FCDC88C1-4339-C16A-6D54-84483F629D16">
 <createdBy>David</createdBy>
 <createdTime>2015-11-02 22:24:10 UTC</createdTime>
 <ownerDesignName>logical_model</ownerDesignName>
@@ -9,7 +9,7 @@
 <sourcePk>807E3C70-3D7A-CCE2-05EE-EC1D28FD9071</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
-<optionalTarget>false</optionalTarget>
+<optionalTarget>true</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>74119953-2DAD-97CA-1DE0-BF46792A6595</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>

@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C303700F-9A38-02F5-0D89-096BC3364E24" name="F15 C3 Status Code">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:44:57 UTC</createdTime>
+<generatorID>60BEE4E5-2C7E-D8B0-33B8-C22B4F121E15</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="status id" id="305EAA74-2748-4AD9-F9C5-DBA4A925889B">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:44:57 UTC</createdTime>
+<generatorID>FD910542-A944-80E1-314F-44B267A1BAB8</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective date" id="761C7AC7-25F8-72CE-C99D-759A4BBBD147">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:44:57 UTC</createdTime>
+<generatorID>206CC043-2538-76DE-B372-4BBD5109724D</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="6D3A25F7-C853-448E-0DD7-253934084853">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:44:57 UTC</createdTime>
+<generatorID>38C49827-7369-A149-CAEF-1F3EBB7CDAE4</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="1A8A3147-6270-EDE5-A3CA-03CCC9FE9382">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:44:57 UTC</createdTime>
+<generatorID>9D3E9634-E916-6178-66D8-62FF71B04EF3</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+<ownDataTypeParameters>400,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status code" id="25944E23-04B9-8E5A-4D3F-4FF451B50DAA">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:44:57 UTC</createdTime>
+<generatorID>A83AEE6E-4260-A2A2-9F18-D40BA2B12D52</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CADF1155-E1EE-40D6-BF78-B1B63A07AD5E" name="F15 C3 Status Code PK">
+<createdBy>David</createdBy>
+<createdTime>2015-11-15 18:44:57 UTC</createdTime>
+<generatorID>2E4AA0EA-C6F1-A4AE-F7D5-3CFD4E3757AF</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>305EAA74-2748-4AD9-F9C5-DBA4A925889B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

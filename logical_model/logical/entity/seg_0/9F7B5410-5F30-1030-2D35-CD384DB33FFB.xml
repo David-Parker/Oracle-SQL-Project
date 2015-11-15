@@ -3,8 +3,9 @@
 <createdBy>David</createdBy>
 <createdTime>2015-11-02 22:08:21 UTC</createdTime>
 <ownerDesignName>logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="false"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
