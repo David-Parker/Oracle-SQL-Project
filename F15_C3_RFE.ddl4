@@ -1,7 +1,51 @@
+drop view F15_C3_Employee_view;
 drop view F15_C3_Executive_Director_view;
 drop view F15_C3_Chairperson_view;
 drop view F15_C3_Lab_Director_view;
 drop view F15_C3_Lab_System_Admin_view;
+
+create view F15_C3_Employee_view as
+SELECT 
+    emp_id,
+    F15_C3_Auth_auth_id,
+    F15_C3_Lab_lab_id,
+    active,
+    name,
+    email,
+    office,
+    phone,
+    status_eff_date,
+    role
+FROM F15_C3_Employee where role = 'Executive Director' ;
+
+create or replace TRIGGER F15_C3_Employee_trig
+     INSTEAD OF insert ON F15_C3_Employee_view
+     FOR EACH ROW
+BEGIN
+    insert into F15_C3_employee(
+	    emp_id,
+	    F15_C3_Auth_auth_id,
+	    F15_C3_Lab_lab_id,
+	    active,
+	    name,
+	    email,
+	    office,
+	    phone,
+	    status_eff_date,
+	    role)
+		 VALUES ( 
+		:NEW.emp_id,
+	    :NEW.auth_id,
+	    :NEW.lab_id,
+	    :NEW.active,
+	    :NEW.name,
+	    :NEW.email,
+	    :NEW.office,
+	    :NEW.phone,
+	    :NEW.status_eff_date,
+	    'Employee') ;
+END;
+/
 
 create view F15_C3_Executive_Director_view as
 SELECT 
