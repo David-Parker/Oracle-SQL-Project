@@ -148,7 +148,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="type" id="14C2B7E9-7EE4-13E8-26F0-8A2271A80374">
+<Attribute name="role" id="14C2B7E9-7EE4-13E8-26F0-8A2271A80374">
 <createdBy>David</createdBy>
 <createdTime>2015-11-15 18:44:57 UTC</createdTime>
 <generatorID>A798A3AB-C8F0-1C56-042B-315C441B4C61</generatorID>

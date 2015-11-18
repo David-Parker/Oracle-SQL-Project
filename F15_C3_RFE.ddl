@@ -122,7 +122,7 @@ CREATE TABLE F15_C3_employee
     office              VARCHAR2 (5) ,
     phone               VARCHAR2 (25) ,
     status_eff_date     DATE ,
-    type                VARCHAR2 (40)
+    role                VARCHAR2 (40)
   ) ;
 CREATE UNIQUE INDEX F15_C3_employee__IDX ON F15_C3_employee
   (

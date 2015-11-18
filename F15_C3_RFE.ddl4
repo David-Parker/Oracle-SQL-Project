@@ -14,8 +14,8 @@ SELECT
     office,
     phone,
     status_eff_date,
-    type
-FROM F15_C3_Employee where type = 'Executive Director' ;
+    role
+FROM F15_C3_Employee where role = 'Executive Director' ;
 
 create or replace TRIGGER F15_C3_Executive_Director_trig
      INSTEAD OF insert ON F15_C3_Executive_Director_view
@@ -31,7 +31,7 @@ BEGIN
 	    office,
 	    phone,
 	    status_eff_date,
-	    type)
+	    role)
 		 VALUES ( 
 		:NEW.emp_id,
 	    :NEW.auth_id,
@@ -57,8 +57,8 @@ SELECT
     office,
     phone,
     status_eff_date,
-    type
-FROM F15_C3_Employee where type = 'Chairperson' ;
+    role
+FROM F15_C3_Employee where role = 'Chairperson' ;
 
 create or replace TRIGGER F15_C3_Chairperson_trig
      INSTEAD OF insert ON F15_C3_Chairperson_view
@@ -74,7 +74,7 @@ BEGIN
 	    office,
 	    phone,
 	    status_eff_date,
-	    type)
+	    role)
 		 VALUES ( 
 		:NEW.emp_id,
 	    :NEW.auth_id,
@@ -100,8 +100,8 @@ SELECT
     office,
     phone,
     status_eff_date,
-    type
-FROM F15_C3_Employee where type = 'Lab Director' ;
+    role
+FROM F15_C3_Employee where role = 'Lab Director' ;
 
 create or replace TRIGGER F15_C3_Lab_Director_trig
      INSTEAD OF insert ON F15_C3_Lab_Director_view
@@ -117,7 +117,7 @@ BEGIN
 	    office,
 	    phone,
 	    status_eff_date,
-	    type)
+	    role)
 		 VALUES ( 
 		:NEW.emp_id,
 	    :NEW.auth_id,
@@ -143,8 +143,8 @@ SELECT
     office,
     phone,
     status_eff_date,
-    type
-FROM F15_C3_Employee where type = 'System Admin' ;
+    role
+FROM F15_C3_Employee where role = 'System Admin' ;
 
 create or replace TRIGGER F15_C3_Lab_System_Admin_trig
      INSTEAD OF insert ON F15_C3_Lab_System_Admin_view
@@ -160,7 +160,7 @@ BEGIN
 	    office,
 	    phone,
 	    status_eff_date,
-	    type)
+	    role)
 		 VALUES ( 
 		:NEW.emp_id,
 	    :NEW.auth_id,

@@ -128,7 +128,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="type" id="A798A3AB-C8F0-1C56-042B-315C441B4C61">
+<Column name="role" id="A798A3AB-C8F0-1C56-042B-315C441B4C61">
 <createdBy>David</createdBy>
 <createdTime>2015-11-15 18:43:14 UTC</createdTime>
 <ownerDesignName>logical_model</ownerDesignName>
