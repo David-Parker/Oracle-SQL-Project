@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D769244E-13E3-848E-43F3-497C9E0904F1" name="approvers">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="F15_C3_employee_emp_id" id="4C88445F-8EFC-28E5-B3F7-027EA01F2163">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="437F8780-DD93-51F5-7010-992B1BA9991D" referredColumn="69C8D7D3-8A09-80CC-84B1-4DCD5361D4DE"/>
+</associations>
+</Column>
+<Column name="F15_C3_employee_F15_C3_Auth_auth_id" id="8D3F6062-E511-7DDC-65C7-C7EC33EA0C05">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="437F8780-DD93-51F5-7010-992B1BA9991D" referredColumn="F8078FED-DD43-0657-E9FD-AB27C9654B47"/>
+</associations>
+</Column>
+<Column name="F15_C3_RFE_ref_id" id="9213ED56-833C-B420-94C8-6DB6672BCD7F">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C9E6855-BFCD-DC5A-8996-B2717DB6B536" referredColumn="B9A78EE0-8F17-4A2C-B37F-DFBC027E922B"/>
+</associations>
+</Column>
+<Column name="approvers" id="B098DC64-6F8F-AFCF-2E70-EC58AA96FB31">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<generatorID>EA5B322E-B581-9AF0-7562-0F7E3B171B00</generatorID>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="395C8A1D-D66F-CB56-AE2F-B1EFF923D5C1" name="approvers_PK">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C88445F-8EFC-28E5-B3F7-027EA01F2163"/>
+<colUsage columnID="8D3F6062-E511-7DDC-65C7-C7EC33EA0C05"/>
+<colUsage columnID="9213ED56-833C-B420-94C8-6DB6672BCD7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0097B473-CAD0-8542-C421-A108B79687B2" name="FK_ASS_10">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<generatorID>1DD2ABBB-892F-40DD-FFC4-506DB28B891A</generatorID>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C88445F-8EFC-28E5-B3F7-027EA01F2163"/>
+<colUsage columnID="8D3F6062-E511-7DDC-65C7-C7EC33EA0C05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61ED8EE2-6428-F7E7-E143-EEB79F56B31D" name="FK_ASS_11">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<generatorID>1DD2ABBB-892F-40DD-FFC4-506DB28B891A</generatorID>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9213ED56-833C-B420-94C8-6DB6672BCD7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

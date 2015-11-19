@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="88D6C6DA-500C-E54B-2BD1-FF4D23B062B0" name="Relation_11">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="F15_C3_RFE_ref_id" id="8E24B645-451E-F1BA-1545-E9929AF0DEBC">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A80ED75-4121-9BE6-E256-5B712D3CF37E" referredColumn="B9A78EE0-8F17-4A2C-B37F-DFBC027E922B"/>
+</associations>
+</Column>
+<Column name="F15_C3_Comment_comment_id" id="726474EC-F3DC-B69B-6657-2A2A0536C922">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="347D5F94-52B8-7979-4DED-943BB7B1F80E" referredColumn="3593780A-537D-56D3-0140-28F8E8867F3A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="811C37C4-98F1-6C41-3AD2-5140121B94A6" name="Relation_11_PK">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E24B645-451E-F1BA-1545-E9929AF0DEBC"/>
+<colUsage columnID="726474EC-F3DC-B69B-6657-2A2A0536C922"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A212A879-707F-BA2D-E7AD-8A8B7C9CDD70" name="FK_ASS_2">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<generatorID>F7D1C8E6-4EB7-4D47-E6B6-04FBFBB8F6DE</generatorID>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E24B645-451E-F1BA-1545-E9929AF0DEBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9661C9E-F3C7-AC98-E3ED-C0FA27EFBD0A" name="FK_ASS_3">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<generatorID>F7D1C8E6-4EB7-4D47-E6B6-04FBFBB8F6DE</generatorID>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="726474EC-F3DC-B69B-6657-2A2A0536C922"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

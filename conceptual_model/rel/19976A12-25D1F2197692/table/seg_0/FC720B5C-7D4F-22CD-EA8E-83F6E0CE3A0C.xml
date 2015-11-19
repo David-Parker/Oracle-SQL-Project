@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC720B5C-7D4F-22CD-EA8E-83F6E0CE3A0C" name="F15_C3_Comment">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<generatorID>0E4B1F01-DF47-0D0B-87AD-DCB80710F81A</generatorID>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="comment_id" id="3593780A-537D-56D3-0140-28F8E8867F3A">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<generatorID>236FECF5-738F-0A45-73EB-7DDB66E6B67E</generatorID>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15_C3_employee_emp_id" id="AF80610B-3D7F-0739-E9FA-57DB32EB5D99">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<generatorID>E49EBFBC-F79D-4516-99F9-EE6BDCF76D0B</generatorID>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5A572EB-5542-F4FF-E3BD-99D43CFCE04E" referredColumn="69C8D7D3-8A09-80CC-84B1-4DCD5361D4DE"/>
+</associations>
+</Column>
+<Column name="entry_date" id="D49095F9-9FCA-3C12-4E9F-DF7191496DD4">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<generatorID>DAFBAB59-5356-957D-43CB-ADE08222453B</generatorID>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comments" id="C438DCB9-A181-CCA8-EEAB-1229C75F0DCA">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<generatorID>5E6B761E-CD92-D22A-1301-ED2CC3B47D8F</generatorID>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15_C3_employee_auth_id" id="432FA422-2F31-C359-91D3-C98DD5E9E95C">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<generatorID>A31D2902-D999-3BA1-F930-15410D8BFB56</generatorID>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5A572EB-5542-F4FF-E3BD-99D43CFCE04E" referredColumn="F8078FED-DD43-0657-E9FD-AB27C9654B47"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8DDDC89-5D15-C704-186B-B8681F13F640" name="F15_C3_Comment_PK">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<generatorID>87D3BE79-9D68-D89A-A0C5-DE59907F718C</generatorID>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3593780A-537D-56D3-0140-28F8E8867F3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1B90A1E-6731-8305-FD3B-00792E9DB5DB" name="F15_C3_Comment_F15_C3_employee_FK">
+<createdBy>David</createdBy>
+<createdTime>2015-11-19 02:30:24 UTC</createdTime>
+<generatorID>6D85086D-6D76-7FBB-43AC-20A2E5DEDD5B</generatorID>
+<ownerDesignName>conceptual_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF80610B-3D7F-0739-E9FA-57DB32EB5D99"/>
+<colUsage columnID="432FA422-2F31-C359-91D3-C98DD5E9E95C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

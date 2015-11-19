@@ -7,7 +7,6 @@ drop view F15_C3_Lab_System_Admin_view;
 create view F15_C3_Employee_view as
 SELECT 
     emp_id,
-    F15_C3_Auth_auth_id,
     F15_C3_Lab_lab_id,
     active,
     name,
@@ -15,6 +14,7 @@ SELECT
     office,
     phone,
     status_eff_date,
+    F15_C3_Auth_auth_id,
     role
 FROM F15_C3_Employee where role = 'Executive Director' ;
 
@@ -24,7 +24,6 @@ create or replace TRIGGER F15_C3_Employee_trig
 BEGIN
     insert into F15_C3_employee(
 	    emp_id,
-	    F15_C3_Auth_auth_id,
 	    F15_C3_Lab_lab_id,
 	    active,
 	    name,
@@ -32,17 +31,18 @@ BEGIN
 	    office,
 	    phone,
 	    status_eff_date,
+	    F15_C3_Auth_auth_id,
 	    role)
 		 VALUES ( 
 		:NEW.emp_id,
-	    :NEW.auth_id,
-	    :NEW.lab_id,
+	    :NEW.F15_C3_Lab_lab_id,
 	    :NEW.active,
 	    :NEW.name,
 	    :NEW.email,
 	    :NEW.office,
 	    :NEW.phone,
 	    :NEW.status_eff_date,
+	    :NEW.F15_C3_Auth_auth_id,
 	    'Employee') ;
 END;
 /
@@ -50,7 +50,6 @@ END;
 create view F15_C3_Executive_Director_view as
 SELECT 
     emp_id,
-    F15_C3_Auth_auth_id,
     F15_C3_Lab_lab_id,
     active,
     name,
@@ -58,6 +57,7 @@ SELECT
     office,
     phone,
     status_eff_date,
+    F15_C3_Auth_auth_id,
     role
 FROM F15_C3_Employee where role = 'Executive Director' ;
 
@@ -67,7 +67,6 @@ create or replace TRIGGER F15_C3_Executive_Director_trig
 BEGIN
     insert into F15_C3_employee(
 	    emp_id,
-	    F15_C3_Auth_auth_id,
 	    F15_C3_Lab_lab_id,
 	    active,
 	    name,
@@ -75,17 +74,18 @@ BEGIN
 	    office,
 	    phone,
 	    status_eff_date,
+	    F15_C3_Auth_auth_id,
 	    role)
 		 VALUES ( 
 		:NEW.emp_id,
-	    :NEW.auth_id,
-	    :NEW.lab_id,
+	    :NEW.F15_C3_Lab_lab_id,
 	    :NEW.active,
 	    :NEW.name,
 	    :NEW.email,
 	    :NEW.office,
 	    :NEW.phone,
 	    :NEW.status_eff_date,
+	    :NEW.F15_C3_Auth_auth_id,
 	    'Executive Director') ;
 END;
 /
@@ -93,7 +93,6 @@ END;
 create view F15_C3_Chairperson_view as
 SELECT 
     emp_id,
-    F15_C3_Auth_auth_id,
     F15_C3_Lab_lab_id,
     active,
     name,
@@ -101,6 +100,7 @@ SELECT
     office,
     phone,
     status_eff_date,
+    F15_C3_Auth_auth_id,
     role
 FROM F15_C3_Employee where role = 'Chairperson' ;
 
@@ -110,7 +110,6 @@ create or replace TRIGGER F15_C3_Chairperson_trig
 BEGIN
     insert into F15_C3_employee(
 	    emp_id,
-	    F15_C3_Auth_auth_id,
 	    F15_C3_Lab_lab_id,
 	    active,
 	    name,
@@ -118,17 +117,18 @@ BEGIN
 	    office,
 	    phone,
 	    status_eff_date,
+	    F15_C3_Auth_auth_id,
 	    role)
 		 VALUES ( 
 		:NEW.emp_id,
-	    :NEW.auth_id,
-	    :NEW.lab_id,
+	    :NEW.F15_C3_Lab_lab_id,
 	    :NEW.active,
 	    :NEW.name,
 	    :NEW.email,
 	    :NEW.office,
 	    :NEW.phone,
 	    :NEW.status_eff_date,
+	    :NEW.F15_C3_Auth_auth_id,
 	    'Chairperson') ;
 END;
 /
@@ -136,7 +136,6 @@ END;
 create view F15_C3_Lab_Director_view as
 SELECT 
     emp_id,
-    F15_C3_Auth_auth_id,
     F15_C3_Lab_lab_id,
     active,
     name,
@@ -144,6 +143,7 @@ SELECT
     office,
     phone,
     status_eff_date,
+    F15_C3_Auth_auth_id,
     role
 FROM F15_C3_Employee where role = 'Lab Director' ;
 
@@ -153,7 +153,6 @@ create or replace TRIGGER F15_C3_Lab_Director_trig
 BEGIN
     insert into F15_C3_employee(
 	    emp_id,
-	    F15_C3_Auth_auth_id,
 	    F15_C3_Lab_lab_id,
 	    active,
 	    name,
@@ -161,17 +160,18 @@ BEGIN
 	    office,
 	    phone,
 	    status_eff_date,
+	    F15_C3_Auth_auth_id,
 	    role)
 		 VALUES ( 
 		:NEW.emp_id,
-	    :NEW.auth_id,
-	    :NEW.lab_id,
+	    :NEW.F15_C3_Lab_lab_id,
 	    :NEW.active,
 	    :NEW.name,
 	    :NEW.email,
 	    :NEW.office,
 	    :NEW.phone,
 	    :NEW.status_eff_date,
+	    :NEW.F15_C3_Auth_auth_id,
 	    'Lab Director') ;
 END;
 /
@@ -179,7 +179,6 @@ END;
 create view F15_C3_Lab_System_Admin_view as
 SELECT 
     emp_id,
-    F15_C3_Auth_auth_id,
     F15_C3_Lab_lab_id,
     active,
     name,
@@ -187,6 +186,7 @@ SELECT
     office,
     phone,
     status_eff_date,
+    F15_C3_Auth_auth_id,
     role
 FROM F15_C3_Employee where role = 'System Admin' ;
 
@@ -196,7 +196,6 @@ create or replace TRIGGER F15_C3_Lab_System_Admin_trig
 BEGIN
     insert into F15_C3_employee(
 	    emp_id,
-	    F15_C3_Auth_auth_id,
 	    F15_C3_Lab_lab_id,
 	    active,
 	    name,
@@ -204,17 +203,18 @@ BEGIN
 	    office,
 	    phone,
 	    status_eff_date,
+	    F15_C3_Auth_auth_id,
 	    role)
 		 VALUES ( 
 		:NEW.emp_id,
-	    :NEW.auth_id,
-	    :NEW.lab_id,
+	    :NEW.F15_C3_Lab_lab_id,
 	    :NEW.active,
 	    :NEW.name,
 	    :NEW.email,
 	    :NEW.office,
 	    :NEW.phone,
 	    :NEW.status_eff_date,
+	    :NEW.F15_C3_Auth_auth_id,
 	    'System Admin') ;
 END;
 /
