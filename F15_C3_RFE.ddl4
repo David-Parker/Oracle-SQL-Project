@@ -231,7 +231,7 @@ SELECT
     explaination,
     alt_protections,
     approval_review_date
-FROM F15_C3_RFE where F15_C3_employee_emp_id = V('P1_EMP');
+FROM F15_C3_RFE where F15_C3_employee_emp_id = v('P1_EMP');
 
 create or replace TRIGGER F15_C3_RFE_Requestor_trig
      INSTEAD OF insert ON F15_C3_RFE_Requestor_view
@@ -247,7 +247,7 @@ BEGIN
 	    approval_review_date)
 	    VALUES(
 	    :NEW.ref_id,
-	    V('P1_EMP'),
+	    v('P1_EMP'),
 	    100,
 	    :NEW.F15_C3_Task_task_id,
 	    :NEW.explaination,
