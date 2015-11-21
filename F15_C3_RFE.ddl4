@@ -248,7 +248,7 @@ BEGIN
 	    VALUES(
 	    :NEW.ref_id,
 	    V('P1_EMP'),
-	    :NEW.F15_C3_Status_Code_status_id,
+	    100,
 	    :NEW.F15_C3_Task_task_id,
 	    :NEW.explaination,
 	    :NEW.alt_protections,
