@@ -222,7 +222,7 @@ END;
 
 -- Trigger for RFE replaces the requestor with the currently logged in employee
 
-create F15_C3_RFE_Requestor_view as
+create view F15_C3_RFE_Requestor_view as
 SELECT
 	ref_id,
     F15_C3_employee_emp_id,
@@ -253,6 +253,6 @@ BEGIN
 	    :NEW.explaination,
 	    :NEW.alt_protections,
 	    :NEW.approval_review_date
-	    )
+	    );
 END;
 /
