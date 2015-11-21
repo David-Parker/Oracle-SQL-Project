@@ -3,6 +3,7 @@ drop view F15_C3_Executive_Director_view;
 drop view F15_C3_Chairperson_view;
 drop view F15_C3_Lab_Director_view;
 drop view F15_C3_Lab_System_Admin_view;
+drop view F15_C3_RFE_Requestor_view;
 
 create view F15_C3_Employee_view as
 SELECT 
@@ -220,8 +221,20 @@ END;
 /
 
 -- Trigger for RFE replaces the requestor with the currently logged in employee
+
+create F15_C3_RFE_Requestor_view as
+SELECT
+	ref_id,
+    F15_C3_employee_emp_id,
+    F15_C3_Status_Code_status_id,
+    F15_C3_Task_task_id,
+    explaination,
+    alt_protections,
+    approval_review_date
+FROM F15_C3_RFE;
+
 create or replace TRIGGER F15_C3_RFE_Requestor_trig
-     INSTEAD OF insert ON F15_C3_RFE
+     INSTEAD OF insert ON F15_C3_RFE_Requestor_view
      FOR EACH ROW
 BEGIN
     insert into F15_C3_RFE(
