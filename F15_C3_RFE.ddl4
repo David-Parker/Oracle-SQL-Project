@@ -218,3 +218,28 @@ BEGIN
 	    'System Admin') ;
 END;
 /
+
+-- Trigger for RFE replaces the requestor with the currently logged in employee
+create or replace TRIGGER F15_C3_RFE_Requestor_trig
+     INSTEAD OF insert ON F15_C3_RFE
+     FOR EACH ROW
+BEGIN
+    insert into F15_C3_RFE(
+	    ref_id,
+	    F15_C3_employee_emp_id,
+	    F15_C3_Status_Code_status_id,
+	    F15_C3_Task_task_id,
+	    explaination,
+	    alt_protections,
+	    approval_review_date)
+	    VALUES(
+	    :NEW.ref_id,
+	    V('P1_EMP'),
+	    :NEW.F15_C3_Status_Code_status_id,
+	    :NEW.F15_C3_Task_task_id,
+	    :NEW.explaination,
+	    :NEW.alt_protections,
+	    :NEW.approval_review_date
+	    )
+END;
+/

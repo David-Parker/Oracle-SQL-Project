@@ -1,8 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CB761962-E9E8-A2A8-D7B2-47B811D32C4A" name="F15_C3_Lab">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A55F01BF-1B1F-0495-A1AD-AFC93FD95E9D" name="F15 C3 Auth">
 <createdBy>David</createdBy>
-<createdTime>2015-11-02 22:19:57 UTC</createdTime>
-<ownerDesignName>conceptual_model</ownerDesignName>
+<createdTime>2015-11-19 02:57:02 UTC</createdTime>
+<generatorID>F9D6DECA-25A5-8BB1-E22D-C7C15C0C5DFC</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
 <engineerTo>
 <item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
 </engineerTo>
@@ -15,10 +16,11 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="lab_id" id="864CAD9B-5B13-C24E-5213-6320C8CD252A">
+<Attribute name="auth id" id="A62ECDF5-25D1-86A3-2CC6-234BF85D0098">
 <createdBy>David</createdBy>
-<createdTime>2015-11-02 22:20:08 UTC</createdTime>
-<ownerDesignName>conceptual_model</ownerDesignName>
+<createdTime>2015-11-19 02:57:02 UTC</createdTime>
+<generatorID>87C73849-BB70-D282-F7A1-F7B875B16400</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
 <engineerTo>
 <item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
 </engineerTo>
@@ -27,10 +29,11 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="name" id="17611E0E-B8BE-7AC4-D1AB-FF3CAA959F34">
+<Attribute name="right" id="3DBC34D2-7510-6730-CC82-8142F6B6A8C6">
 <createdBy>David</createdBy>
-<createdTime>2015-11-15 16:51:00 UTC</createdTime>
-<ownerDesignName>conceptual_model</ownerDesignName>
+<createdTime>2015-11-19 02:57:02 UTC</createdTime>
+<generatorID>BE010474-24A8-FC42-AA3A-6AB5C45700EF</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
 <engineerTo>
 <item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
 </engineerTo>
@@ -38,21 +41,22 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>40</dataTypeSize>
-<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="37F8AB31-3D4B-6EB2-FA77-9439C867815C" name="F15_C3_Lab PK">
+<identifier id="96BAE5F9-0DA0-972E-540B-F18CD341F70E" name="F15 C3 Auth PK">
 <createdBy>David</createdBy>
-<createdTime>2015-11-02 22:20:21 UTC</createdTime>
-<ownerDesignName>conceptual_model</ownerDesignName>
+<createdTime>2015-11-19 02:57:02 UTC</createdTime>
+<generatorID>065BA8DF-4003-4D0B-801A-4E2F1A6C2F3A</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
 <engineerTo>
 <item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>864CAD9B-5B13-C24E-5213-6320C8CD252A</attributeRef>
+<attributeRef>A62ECDF5-25D1-86A3-2CC6-234BF85D0098</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

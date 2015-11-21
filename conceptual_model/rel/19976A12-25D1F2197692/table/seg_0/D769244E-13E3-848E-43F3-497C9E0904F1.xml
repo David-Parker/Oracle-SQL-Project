@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D769244E-13E3-848E-43F3-497C9E0904F1" name="approvers">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D769244E-13E3-848E-43F3-497C9E0904F1" name="approversv1">
 <createdBy>David</createdBy>
 <createdTime>2015-11-19 02:30:24 UTC</createdTime>
 <ownerDesignName>conceptual_model</ownerDesignName>
@@ -62,7 +62,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="395C8A1D-D66F-CB56-AE2F-B1EFF923D5C1" name="approvers_PK">
+<ind_PK_UK id="395C8A1D-D66F-CB56-AE2F-B1EFF923D5C1" name="approvers_PKv1">
 <createdBy>David</createdBy>
 <createdTime>2015-11-19 02:30:24 UTC</createdTime>
 <ownerDesignName>conceptual_model</ownerDesignName>
@@ -75,7 +75,7 @@
 <colUsage columnID="9213ED56-833C-B420-94C8-6DB6672BCD7F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0097B473-CAD0-8542-C421-A108B79687B2" name="FK_ASS_10">
+<ind_PK_UK id="0097B473-CAD0-8542-C421-A108B79687B2" name="FK_ASS_10v1">
 <createdBy>David</createdBy>
 <createdTime>2015-11-19 02:30:24 UTC</createdTime>
 <generatorID>1DD2ABBB-892F-40DD-FFC4-506DB28B891A</generatorID>
@@ -87,7 +87,7 @@
 <colUsage columnID="8D3F6062-E511-7DDC-65C7-C7EC33EA0C05"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="61ED8EE2-6428-F7E7-E143-EEB79F56B31D" name="FK_ASS_11">
+<ind_PK_UK id="61ED8EE2-6428-F7E7-E143-EEB79F56B31D" name="FK_ASS_11v1">
 <createdBy>David</createdBy>
 <createdTime>2015-11-19 02:30:24 UTC</createdTime>
 <generatorID>1DD2ABBB-892F-40DD-FFC4-506DB28B891A</generatorID>
