@@ -231,7 +231,7 @@ SELECT
     explaination,
     alt_protections,
     approval_review_date
-FROM F15_C3_RFE;
+FROM F15_C3_RFE where F15_C3_employee_emp_id = V('P1_EMP');
 
 create or replace TRIGGER F15_C3_RFE_Requestor_trig
      INSTEAD OF insert ON F15_C3_RFE_Requestor_view
