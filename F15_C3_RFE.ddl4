@@ -237,7 +237,6 @@ create or replace TRIGGER F15_C3_RFE_Requestor_trig
      INSTEAD OF insert ON F15_C3_RFE_Requestor_view
      DECLARE
      	commentid NUMBER;
-     FOR EACH ROW
 BEGIN
     insert into F15_C3_RFE(
 	    ref_id,
@@ -257,7 +256,7 @@ BEGIN
 	    :NEW.approval_review_date
 	    );
 
-	commentid = F15_C3_Comment_seq.nextval;
+	commentid := F15_C3_Comment_seq.nextval;
 
 	insert into F15_C3_Comment(comment_id, F15_C3_employee_emp_id, entry_date, comments)
 	VALUES(commentid, v('P1_EMP_v2'), SYSDATE, v('P3_COMMENT'));
