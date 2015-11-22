@@ -237,7 +237,10 @@ create or replace TRIGGER F15_C3_RFE_Requestor_trig
      INSTEAD OF insert ON F15_C3_RFE_Requestor_view
      DECLARE
      	commentid NUMBER;
+     	rfeid NUMBER;
 BEGIN
+	rfeid := F15_C3_RFE_seq.nextval;
+
     insert into F15_C3_RFE(
 	    ref_id,
 	    F15_C3_employee_emp_id,
@@ -247,7 +250,7 @@ BEGIN
 	    alt_protections,
 	    approval_review_date)
 	    VALUES(
-	    :NEW.ref_id,
+	    rfeid,
 	    v('P1_EMP_v2'),
 	    100,
 	    :NEW.F15_C3_Task_task_id,
@@ -262,7 +265,7 @@ BEGIN
 	VALUES(commentid, v('P1_EMP_v2'), SYSDATE, v('P3_COMMENT'));
 
 	insert into Relation_11(F15_C3_RFE_ref_id, F15_C3_Comment_comment_id)
-	VALUES(:NEW.ref_id, commentid);
+	VALUES(rfeid, commentid);
 
 END;
 /
