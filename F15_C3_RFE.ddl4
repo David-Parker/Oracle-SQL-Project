@@ -4,6 +4,7 @@ drop view F15_C3_Chairperson_view;
 drop view F15_C3_Lab_Director_view;
 drop view F15_C3_Lab_System_Admin_view;
 drop view F15_C3_RFE_Requestor_view;
+drop view F15_C3_Comment_view;
 
 create view F15_C3_Employee_view as
 SELECT 
@@ -265,7 +266,25 @@ BEGIN
 	 VALUES(commentid, v('P1_EMP_v2'), SYSDATE, v('P3_COMMENT'));
 
 	insert into Relation_11(F15_C3_RFE_ref_id, F15_C3_Comment_comment_id)
-	VALUES(rfeid, commentid);
+	VALUES(rfeid+1, commentid+1);
 
 END;	
+/
+
+create view F15_C3_Comment_view as
+SELECT * FROM F15_C3_Comment;
+
+create or replace TRIGGER F15_C3_Comment_trig
+	INSTEAD of INSERT ON F15_C3_Comment_view
+	DECLARE commentid NUMBER;
+
+BEGIN
+	commentid := F15_C3_Comment_seq.nextval;
+
+	insert into F15_C3_Comment(comment_id, F15_C3_employee_emp_id, entry_date, comments)
+	 VALUES(commentid, v('P1_EMP_v2'), SYSDATE, :NEW.comments);
+
+	 	insert into Relation_11(F15_C3_RFE_ref_id, F15_C3_Comment_comment_id)
+		VALUES(v('P6_RFE')+1, commentid+1);
+END;
 /
