@@ -259,13 +259,16 @@ BEGIN
 	    :NEW.approval_review_date
 	    );
 
-	commentid := F15_C3_Comment_seq.nextval;
+	 commentid := F15_C3_Comment_seq.nextval;
 
-	insert into F15_C3_Comment(comment_id, F15_C3_employee_emp_id, entry_date, comments)
-	VALUES(commentid, v('P1_EMP_v2'), SYSDATE, v('P3_COMMENT'),null,null,null,null,null);
-
-	insert into Relation_11(F15_C3_RFE_ref_id, F15_C3_Comment_comment_id)
-	VALUES(rfeid, commentid);
+	 insert into F15_C3_Comment(comment_id, F15_C3_employee_emp_id, entry_date, comments)
+	 VALUES(commentid, v('P1_EMP_v2'), SYSDATE, v('P3_COMMENT'));
 
 END;
+
+BEGIN
+		insert into Relation_11(F15_C3_RFE_ref_id, F15_C3_Comment_comment_id)
+	VALUES(rfeid, commentid);
+END;
+	
 /
