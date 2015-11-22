@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C03A8509-855A-4A77-260F-EAEEC189FA74" name="F15 C3 Lab">
+<createdBy>David</createdBy>
+<createdTime>2015-11-22 17:14:46 UTC</createdTime>
+<generatorID>4F4FB9A7-1602-074F-B2CC-C20B672B4286</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lab id" id="F789AFE9-93B7-2E6B-795C-65478FCE62A1">
+<createdBy>David</createdBy>
+<createdTime>2015-11-22 17:14:46 UTC</createdTime>
+<generatorID>20753298-B7C3-43CB-8B14-367BAA94E8EE</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="CD406037-C29C-3111-A94C-0A3F80C67585">
+<createdBy>David</createdBy>
+<createdTime>2015-11-22 17:14:46 UTC</createdTime>
+<generatorID>34048532-C4D1-831E-BA6B-4608AC359DEB</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D99B22A3-4B2C-3AE5-0FF1-E9816F0D7823" name="F15 C3 Lab PK">
+<createdBy>David</createdBy>
+<createdTime>2015-11-22 17:14:46 UTC</createdTime>
+<generatorID>088F602B-5249-B39F-AC99-3077AF0CE6BB</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F789AFE9-93B7-2E6B-795C-65478FCE62A1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

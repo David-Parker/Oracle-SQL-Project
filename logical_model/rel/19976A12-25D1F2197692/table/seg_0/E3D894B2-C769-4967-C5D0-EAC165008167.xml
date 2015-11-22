@@ -35,10 +35,69 @@
 <colAssociation fkAssociation="A7C99311-F1A7-E5A3-8D76-0765474470BB" referredColumn="73A6A77A-66FA-6DDA-8E26-5C9D87046771"/>
 </associations>
 </Column>
-<Column name="name" id="B60669A1-DD47-21FE-C9F0-E0A46709F619">
+<Column name="filename" id="B60669A1-DD47-21FE-C9F0-E0A46709F619">
 <createdBy>David</createdBy>
 <createdTime>2015-11-19 02:55:09 UTC</createdTime>
 <generatorID>2E787849-7959-4488-EB94-C0D58AF64261</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_mimetype" id="FAFEC0D4-48B1-2AAB-526C-E7E36D734197">
+<createdBy>David</createdBy>
+<createdTime>2015-11-22 17:14:29 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_charset" id="E397A4A8-BCAF-7C21-4269-16E55C52A6CE">
+<createdBy>David</createdBy>
+<createdTime>2015-11-22 17:14:29 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_blob" id="DECD9F20-F02F-D826-F043-2BB9E60C04ED">
+<createdBy>David</createdBy>
+<createdTime>2015-11-22 17:14:29 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comments" id="3C201519-9C1A-15B7-8639-C1608C38125B">
+<createdBy>David</createdBy>
+<createdTime>2015-11-22 17:14:29 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tags" id="5FCF4EDC-02C1-26B0-02C7-794089C937EE">
+<createdBy>David</createdBy>
+<createdTime>2015-11-22 17:14:29 UTC</createdTime>
 <ownerDesignName>logical_model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
