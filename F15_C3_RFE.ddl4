@@ -241,11 +241,6 @@ create or replace TRIGGER F15_C3_RFE_Requestor_trig
      	commentid NUMBER;
      	rfeid NUMBER;
 
-     	sysadmin NUMBER;
-     	labdir NUMBER;
-     	chairperson NUMBER;
-     	execdir NUMBER;
-
 BEGIN
 	rfeid := F15_C3_RFE_seq.nextval;
 
@@ -276,74 +271,6 @@ BEGIN
 		insert into Relation_11(F15_C3_RFE_ref_id, F15_C3_Comment_comment_id)
 		VALUES(rfeid+1, commentid+1);
 	END IF;
-
-
-
-	-- system admin
-	select emp_id into sysadmin
-	from F15_C3_employee e1
-	where 	e1.role = 'System Admin' AND
-	e1.F15_C3_Lab_lab_id = 
-	(select F15_C3_Lab_lab_id from F15_C3_RFE r
-	join F15_C3_Employee e2 on e2.emp_id = r.F15_C3_employee_emp_id
-	where r.ref_id = rfeid);
-
-	insert into approvers(
-		F15_C3_employee_emp_id,
-		F15_C3_RFE_ref_id
-		VALUES(
-			sysadmin,
-			rfeid + 1
-		)
-	);
-
-	-- lab director
-	select emp_id into labdir
-	from F15_C3_employee e1
-	where 	e1.role = 'Lab Director' AND
-	e1.F15_C3_Lab_lab_id = 
-	(select F15_C3_Lab_lab_id from F15_C3_RFE r
-	join F15_C3_Employee e2 on e2.emp_id = r.F15_C3_employee_emp_id
-	where r.ref_id = rfeid);
-
-	insert into approvers(
-		F15_C3_employee_emp_id,
-		F15_C3_RFE_ref_id
-		VALUES(
-			labdir,
-			rfeid + 1
-		)
-	);
-
-	-- chairperson
-	select emp_id into chairperson
-	from F15_C3_employee e
-	where e.role = 'Chairperson';
-
-	insert into approvers(
-		F15_C3_employee_emp_id,
-		F15_C3_RFE_ref_id
-		VALUES(
-			chairperson,
-			rfeid + 1
-		)
-	);
-
-	-- executive director
-	select emp_id into execdir
-	from F15_C3_employee e
-	where e.role = 'Executive Director';
-
-	insert into approvers(
-		F15_C3_employee_emp_id,
-		F15_C3_RFE_ref_id
-		VALUES(
-			execdir,
-			rfeid + 1
-		)
-	);
-
-
 
 END;	
 /
@@ -383,5 +310,76 @@ BEGIN
 	VALUES(documentid, v('P6_RFE'), :NEW.filename, :NEW.file_mimetype,:NEW.file_charset, :NEW.FILE_BLOB, :NEW.comments, :NEW.tags);
 
 	END IF;
+END;
+/
+
+
+create or replace TRIGGER F15_C3_RFE_Requestor_after_trig
+     AFTER insert ON F15_C3_RFE_Requestor_view
+     DECLARE
+     	rfeid NUMBER;
+     	sysadmin NUMBER;
+     	labdir NUMBER;
+     	chairperson NUMBER;
+     	execdir NUMBER;
+
+BEGIN
+	rfeid := :OLD.ref_id;
+
+	-- system admin
+	select emp_id into sysadmin
+	from F15_C3_employee e1
+	where e1.role = 'System Admin' AND
+	e1.F15_C3_Lab_lab_id = 
+	(select F15_C3_Lab_lab_id from F15_C3_RFE r
+	join F15_C3_Employee e2 on e2.emp_id = r.F15_C3_employee_emp_id
+	where r.ref_id = rfeid);
+
+	insert into approvers(
+		F15_C3_employee_emp_id,
+		F15_C3_RFE_ref_id)
+		VALUES(
+			sysadmin,
+			rfeid);
+
+	-- lab director
+	select emp_id into labdir
+	from F15_C3_employee e1
+	where 	e1.role = 'Lab Director' AND
+	e1.F15_C3_Lab_lab_id = 
+	(select F15_C3_Lab_lab_id from F15_C3_RFE r
+	join F15_C3_Employee e2 on e2.emp_id = r.F15_C3_employee_emp_id
+	where r.ref_id = rfeid);
+
+	insert into approvers(
+		F15_C3_employee_emp_id,
+		F15_C3_RFE_ref_id)
+		VALUES(
+			labdir,
+			rfeid);
+
+	-- chairperson
+	select emp_id into chairperson
+	from F15_C3_employee e
+	where e.role = 'Chairperson';
+
+	insert into approvers(
+		F15_C3_employee_emp_id,
+		F15_C3_RFE_ref_id)
+		VALUES(
+			chairperson,
+			rfeid);
+
+	-- executive director
+	select emp_id into execdir
+	from F15_C3_employee e
+	where e.role = 'Executive Director';
+
+	insert into approvers(
+		F15_C3_employee_emp_id,
+		F15_C3_RFE_ref_id)
+		VALUES(
+			execdir,
+			rfeid);
 END;
 /
