@@ -243,6 +243,7 @@ create or replace TRIGGER F15_C3_RFE_Requestor_trig
 
 BEGIN
 	rfeid := F15_C3_RFE_seq.nextval;
+	v('P13_RFEID') := rfeid;
 
     insert into F15_C3_RFE(
 	    ref_id,
@@ -314,8 +315,8 @@ END;
 /
 
 
-create or replace TRIGGER F15_C3_RFE_Requestor_after_trig
-     AFTER insert ON F15_C3_RFE_Requestor_view
+create or replace TRIGGER F15_C3_RFE_Requestor_trig_2
+     AFTER insert ON F15_C3_RFE
      DECLARE
      	rfeid NUMBER;
      	sysadmin NUMBER;
@@ -324,7 +325,7 @@ create or replace TRIGGER F15_C3_RFE_Requestor_after_trig
      	execdir NUMBER;
 
 BEGIN
-	rfeid := :OLD.ref_id;
+	rfeid := v('P13_RFEID');
 
 	-- system admin
 	select emp_id into sysadmin
