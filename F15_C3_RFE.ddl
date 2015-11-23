@@ -86,7 +86,8 @@ ALTER TABLE F15_C3_Status_Code ADD CONSTRAINT F15_C3_Status_Code_PK PRIMARY KEY 
 CREATE TABLE F15_C3_Sts_His
   (
     his_id            INTEGER NOT NULL ,
-    F15_C3_RFE_ref_id INTEGER
+    F15_C3_RFE_ref_id INTEGER,
+    status_id INTEGER
   ) ;
 ALTER TABLE F15_C3_Sts_His ADD CONSTRAINT F15_C3_Sts_His_PK PRIMARY KEY ( his_id ) ;
 

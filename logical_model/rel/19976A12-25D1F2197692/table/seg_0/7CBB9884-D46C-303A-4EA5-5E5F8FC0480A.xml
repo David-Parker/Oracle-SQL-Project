@@ -35,6 +35,17 @@
 <colAssociation fkAssociation="DB9930F1-827A-B347-60BE-FB470044FF0D" referredColumn="73A6A77A-66FA-6DDA-8E26-5C9D87046771"/>
 </associations>
 </Column>
+<Column name="status_id" id="B338DA52-92A7-AB0D-3EEE-7566A8AF54E3">
+<createdBy>David</createdBy>
+<createdTime>2015-11-23 19:22:59 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="9A06D6CB-9667-E7CD-4E61-B7C6A90AF275" name="F15_C3_Sts_His_PK">
