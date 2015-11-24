@@ -70,7 +70,7 @@ Neo4j on conn "CREATE (:unit {UNITNO : 66, NAME : 'Gilded General Weiss', HEALTH
 Neo4j on conn "CREATE (:unit {UNITNO : 67, NAME : 'Rakshasa Lord Vishra', HEALTH : 5821, ATTACK : 2000, DEFENSE : 1823, RECOVERY : 1455, SPHERENO : 70, CONTNO : 2})"
 Neo4j on conn "CREATE (:unit {UNITNO : 68, NAME : 'Phoenix Reborn', HEALTH : 5815, ATTACK : 1366, DEFENSE : 1567, RECOVERY : 1833, SPHERENO : 10, CONTNO : 2})"
 Neo4j on conn "CREATE (:unit {UNITNO : 69, NAME : 'Pixy Lord Leore', HEALTH : 5805, ATTACK : 1702, DEFENSE : 1422, RECOVERY : 1716, SPHERENO : 30, CONTNO : 3})"
-Neo4j on conn "CREATE (:unit {UNITNO : 70, NAME : 'Heaven's Bow Loch', HEALTH : 5800, ATTACK : 1745, DEFENSE : 1598, RECOVERY : 1702, SPHERENO : 10, CONTNO : 5})"
+Neo4j on conn "CREATE (:unit {UNITNO : 70, NAME : 'Heavens Bow Loch', HEALTH : 5800, ATTACK : 1745, DEFENSE : 1598, RECOVERY : 1702, SPHERENO : 10, CONTNO : 5})"
 Neo4j on conn "CREATE (:unit {UNITNO : 71, NAME : 'Aqua Goddess Abel', HEALTH : 5799, ATTACK : 1761, DEFENSE : 1792, RECOVERY : 1705, SPHERENO : 60, CONTNO : 5})"
 Neo4j on conn "CREATE (:unit {UNITNO : 72, NAME : 'Ice Master Dean', HEALTH : 5756, ATTACK : 1726, DEFENSE : 1642, RECOVERY : 1761, SPHERENO : 30, CONTNO : 3})"
 Neo4j on conn "CREATE (:unit {UNITNO : 73, NAME : 'Holy Shock Emilia', HEALTH : 5749, ATTACK : 1620, DEFENSE : 1582, RECOVERY : 1582, SPHERENO : 90, CONTNO : 2})"
