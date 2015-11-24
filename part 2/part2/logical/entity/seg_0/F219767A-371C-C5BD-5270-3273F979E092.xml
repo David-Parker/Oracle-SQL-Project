@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F219767A-371C-C5BD-5270-3273F979E092" name="gate">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:09:26 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="GATENO" id="DA4BC3CC-725D-E534-EA65-B2F8819AAC4A">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:09:31 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAME" id="4C43CE9D-604A-0910-1758-8A742BACCBEA">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:09:44 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WORLDNO" id="29FF7F9F-497B-B4F4-06FC-69CE0ADE1A6A">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:14:47 UTC</createdTime>
+<generatorID>A6B6CAF2-1B97-A47A-2147-7428EEC305DA</generatorID>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>68EEEFF6-81C7-E20A-8A39-0E2A964AF585</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A2AAE7D2-F320-B4F3-2DC0-181D769340A5" name="gate PK">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:09:40 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DA4BC3CC-725D-E534-EA65-B2F8819AAC4A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

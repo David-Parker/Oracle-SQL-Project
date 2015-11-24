@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EBAAEA94-7CC6-DA62-F7E7-F9193343109A" name="world">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:08:50 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="WORLDNO" id="68EEEFF6-81C7-E20A-8A39-0E2A964AF585">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:08:55 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAME" id="00EA80C8-843B-57B8-4E12-5E5A1827FE8C">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:09:05 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONTNO" id="7D526335-2B05-1ABD-C596-7E024E331866">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:14:28 UTC</createdTime>
+<generatorID>55FA7F02-480E-A79C-ACBA-7795651DCCA1</generatorID>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>57331D3A-7DB2-C2BE-14CC-D345C0B4038E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GATENO" id="00A8AA7C-B4B5-5A29-2B68-BC4810911E96">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:14:42 UTC</createdTime>
+<generatorID>A6B6CAF2-1B97-A47A-2147-7428EEC305DA</generatorID>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DA4BC3CC-725D-E534-EA65-B2F8819AAC4A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C984FA19-90CC-5C45-5DEB-F95E95D85963" name="world PK">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:14:46 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>68EEEFF6-81C7-E20A-8A39-0E2A964AF585</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

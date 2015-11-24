@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5AC1922A-03BD-2C6E-1951-5A356869DE48" name="continent">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:07:26 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CONTNO" id="57331D3A-7DB2-C2BE-14CC-D345C0B4038E">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:07:36 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAME" id="DC5779F2-730F-78D7-F6A6-1EA3227F3C3D">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:07:53 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNITNO" id="EACD1A31-704E-BE1F-50CE-FCFE4287C250">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:14:10 UTC</createdTime>
+<generatorID>2C1E9558-01EB-B33A-FE03-2E2270C7FC36</generatorID>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F7E21C22-8620-9540-2746-E5E065D940C3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WORLDNO" id="D74B1EFC-5CD7-2278-F5E5-42005137E89D">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:14:47 UTC</createdTime>
+<generatorID>55FA7F02-480E-A79C-ACBA-7795651DCCA1</generatorID>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>68EEEFF6-81C7-E20A-8A39-0E2A964AF585</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CEC3609E-C287-10BA-1E56-12A749F2E8D0" name="continent PK">
+<createdBy>jefferson</createdBy>
+<createdTime>2015-11-24 11:07:40 UTC</createdTime>
+<ownerDesignName>part2</ownerDesignName>
+<engineerTo>
+<item key="983941B8-84C7-E524-E16B-0ADB822735AF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>57331D3A-7DB2-C2BE-14CC-D345C0B4038E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

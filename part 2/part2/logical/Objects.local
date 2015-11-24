@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="8E45F196-A67E-9746-5768-A0B44357501B" name="Player" seqName="seg_0"/>
+   <object objectType="Entity" objectID="64A599F6-5FE9-D7CE-F8B8-AA62F7E2479E" name="Units" seqName="seg_0"/>
+   <object objectType="Entity" objectID="5AC1922A-03BD-2C6E-1951-5A356869DE48" name="continent" seqName="seg_0"/>
+   <object objectType="Entity" objectID="F219767A-371C-C5BD-5270-3273F979E092" name="gate" seqName="seg_0"/>
+   <object objectType="Entity" objectID="4CC9E021-2625-5C45-FB48-962F3E897E17" name="sphere" seqName="seg_0"/>
+   <object objectType="Entity" objectID="EBAAEA94-7CC6-DA62-F7E7-F9193343109A" name="world" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5E373C46-CF8B-10F4-82EF-705AE4CB8AAA" name="Relation_2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A7B0ED15-2FCF-BC10-5AAA-1297F6A1446F" name="Relation_3" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2C1E9558-01EB-B33A-FE03-2E2270C7FC36" name="Relation_4" seqName="seg_0"/>
+   <object objectType="Relation" objectID="55FA7F02-480E-A79C-ACBA-7795651DCCA1" name="Relation_5" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A6B6CAF2-1B97-A47A-2147-7428EEC305DA" name="Relation_6" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>
