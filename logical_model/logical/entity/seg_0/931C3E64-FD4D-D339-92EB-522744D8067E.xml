@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BED15309-3038-2920-E648-C65A3F67EAD4" name="contactsv1">
-<createdBy>David</createdBy>
-<createdTime>2015-11-19 02:57:02 UTC</createdTime>
-<generatorID>666B6EF4-1CC0-B053-E3DC-92F5170823B9</generatorID>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="931C3E64-FD4D-D339-92EB-522744D8067E" name="F15 C3 Labv1">
+<createdBy>Spencer</createdBy>
+<createdTime>2015-11-24 05:45:44 UTC</createdTime>
+<generatorID>4F4FB9A7-1602-074F-B2CC-C20B672B4286</generatorID>
 <ownerDesignName>logical_model</ownerDesignName>
 <engineerTo>
 <item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
@@ -16,48 +16,47 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="F15 C3 employee emp id" id="98C78560-6CE2-CC84-3394-6205FDB37BB9">
-<createdBy>David</createdBy>
-<createdTime>2015-11-19 02:57:02 UTC</createdTime>
-<generatorID>7B774059-A42C-FD52-A163-A0B20DCBD5A1</generatorID>
+<Attribute name="lab id" id="A01B3DDF-A67C-6A78-F5B5-745AD6E4B6D8">
+<createdBy>Spencer</createdBy>
+<createdTime>2015-11-24 05:45:44 UTC</createdTime>
+<generatorID>20753298-B7C3-43CB-8B14-367BAA94E8EE</generatorID>
 <ownerDesignName>logical_model</ownerDesignName>
 <engineerTo>
 <item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
 </engineerTo>
-<referedAttribute>47B021DC-400E-3C4A-EE0B-ADBB9A8A3558</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="F15 C3 RFE ref id" id="0F429F8D-4655-B6C2-D1E0-5CCC1050F6AF">
-<createdBy>David</createdBy>
-<createdTime>2015-11-19 02:57:02 UTC</createdTime>
-<generatorID>63A994A7-94AC-0704-F80A-F2F84FB66D16</generatorID>
+<Attribute name="name" id="F2C5E835-476F-1527-9DEC-FA8F0767DC2D">
+<createdBy>Spencer</createdBy>
+<createdTime>2015-11-24 05:45:44 UTC</createdTime>
+<generatorID>34048532-C4D1-831E-BA6B-4608AC359DEB</generatorID>
 <ownerDesignName>logical_model</ownerDesignName>
 <engineerTo>
 <item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
 </engineerTo>
-<referedAttribute>9AFDCF23-703C-7D5C-30A4-E787D9CC3002</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="D146791D-EFEA-1F06-6740-2371CA1853F7" name="contacts PK">
-<createdBy>David</createdBy>
-<createdTime>2015-11-19 02:57:02 UTC</createdTime>
-<generatorID>761E3F8F-DC7D-A1D6-70CA-C8E38DFD6044</generatorID>
+<identifier id="B8467269-AD39-FF06-38A7-D4B6CD1D9481" name="F15 C3 Lab PK">
+<createdBy>Spencer</createdBy>
+<createdTime>2015-11-24 05:45:44 UTC</createdTime>
+<generatorID>088F602B-5249-B39F-AC99-3077AF0CE6BB</generatorID>
 <ownerDesignName>logical_model</ownerDesignName>
 <engineerTo>
 <item key="19976A12-329D-A363-FDFD-25D1F2197692" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>98C78560-6CE2-CC84-3394-6205FDB37BB9</attributeRef>
-<attributeRef>0F429F8D-4655-B6C2-D1E0-5CCC1050F6AF</attributeRef>
+<attributeRef>A01B3DDF-A67C-6A78-F5B5-745AD6E4B6D8</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
