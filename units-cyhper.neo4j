@@ -15,7 +15,7 @@ Neo4j on conn "CREATE (:unit {UNITNO : 11, NAME : 'Massacre God Belfura', HEALTH
 Neo4j on conn "CREATE (:unit {UNITNO : 12, NAME : 'Guardian Darvanshel', HEALTH : 6300, ATTACK : 1905, DEFENSE : 1955, RECOVERY : 1689, SPHERENO : 60, CONTNO : 3})"
 Neo4j on conn "CREATE (:unit {UNITNO : 13, NAME : 'Impenetrable Darvan', HEALTH : 6291, ATTACK : 1789, DEFENSE : 1789, RECOVERY : 1564, SPHERENO : 70, CONTNO : 4})"
 Neo4j on conn "CREATE (:unit {UNITNO : 14, NAME : 'Deity Ruler Lucca', HEALTH : 6283, ATTACK : 2089, DEFENSE : 2022, RECOVERY : 1757, SPHERENO : 20, CONTNO : 3})"
-Neo4j on conn "CREATE (:unit {UNITNO : 15, NAME : 'Heaven's Bolt Amy', HEALTH : 6254, ATTACK : 1753, DEFENSE : 1694, RECOVERY : 1582, SPHERENO : 80, CONTNO : 3})"
+Neo4j on conn "CREATE (:unit {UNITNO : 15, NAME : 'Heavens Bolt Amy', HEALTH : 6254, ATTACK : 1753, DEFENSE : 1694, RECOVERY : 1582, SPHERENO : 80, CONTNO : 3})"
 Neo4j on conn "CREATE (:unit {UNITNO : 16, NAME : 'War Queen Ophelia', HEALTH : 6248, ATTACK : 1984, DEFENSE : 1601, RECOVERY : 1722, SPHERENO : 50, CONTNO : 4})"
 Neo4j on conn "CREATE (:unit {UNITNO : 17, NAME : 'Bordebegia', HEALTH : 6222, ATTACK : 2061, DEFENSE : 1653, RECOVERY : 1562, SPHERENO : 80, CONTNO : 1})"
 Neo4j on conn "CREATE (:unit {UNITNO : 18, NAME : 'Dragon God Ragshelm', HEALTH : 6213, ATTACK : 2192, DEFENSE : 2153, RECOVERY : 1605, SPHERENO : 90, CONTNO : 3})"
