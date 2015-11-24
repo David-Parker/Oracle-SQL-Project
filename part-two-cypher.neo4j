@@ -119,3 +119,97 @@ Neo4j on conn "CREATE (:world {WORLDNO : 4, NAME : 'Vriksha', GATENO : 2})"
 
 Neo4j on conn "CREATE (:gate {GATENO : 1, NAME : 'Grand Gaia'})"
 Neo4j on conn "CREATE (:gate {GATENO : 2, NAME : 'Ishgria'})"
+
+
+
+Neo4j on conn "MATCH (a:unit), (b.continent) WHERE a.CONTNO = 1 AND b.CONTNO = 1 CREATE (a)-[:continent]->(b)"
+Neo4j on conn "MATCH (a:unit), (b:continent) WHERE a.CONTNO = 2 AND b.CONTNO = 2 CREATE (a)-[:continent]->(b)"
+Neo4j on conn "MATCH (a:unit), (b:continent) WHERE a.CONTNO = 3 AND b.CONTNO = 3 CREATE (a)-[:continent]->(b)"
+Neo4j on conn "MATCH (a:unit), (b:continent) WHERE a.CONTNO = 4 AND b.CONTNO = 4 CREATE (a)-[:continent]->(b)"
+Neo4j on conn "MATCH (a:unit), (b:continent) WHERE a.CONTNO = 5 AND b.CONTNO = 5 CREATE (a)-[:continent]->(b)"
+
+
+Neo4j on conn "MATCH (a:continent), (b:world) WHERE a.WORLDNO = 1 AND b.WORLDNO = 1 CREATE (a)-[:world]->(b)"
+Neo4j on conn "MATCH (a:continent), (b:world) WHERE a.WORLDNO = 2 AND b.WORLDNO = 2 CREATE (a)-[:world]->(b)"
+Neo4j on conn "MATCH (a:continent), (b:world) WHERE a.WORLDNO = 3 AND b.WORLDNO = 3 CREATE (a)-[:world]->(b)"
+Neo4j on conn "MATCH (a:continent), (b:world) WHERE a.WORLDNO = 4 AND b.WORLDNO = 4 CREATE (a)-[:world]->(b)"
+
+
+Neo4j on conn "MATCH (a:world), (b:gate) WHERE a.GATENO = 1 AND b.GATENO = 1 CREATE (a)-[:gate]->(b)"
+Neo4j on conn "MATCH (a:world), (b:gate) WHERE a.GATENO = 2 AND b.GATENO = 2 CREATE (a)-[:gate]->(b)"
+
+
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO1 = 1 AND b.UNITNO = 1 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO1 = 2 AND b.UNITNO = 2 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO1 = 3 AND b.UNITNO = 3 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO1 = 4 AND b.UNITNO = 4 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO1 = 5 AND b.UNITNO = 5 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO1 = 6 AND b.UNITNO = 6 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO1 = 7 AND b.UNITNO = 7 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO1 = 8 AND b.UNITNO = 8 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO1 = 9 AND b.UNITNO = 9 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO1 = 10 AND b.UNITNO = 10 CREATE (a)-[:unit]->(b)"
+
+
+
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO2 = 77 AND b.UNITNO = 77 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO2 = 74 AND b.UNITNO = 74 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO2 = 65 AND b.UNITNO = 65 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO2 = 66 AND b.UNITNO = 66 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO2 = 18 AND b.UNITNO = 18 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO2 = 20 AND b.UNITNO = 20 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO2 = 40 AND b.UNITNO = 40 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO2 = 45 AND b.UNITNO = 45 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO2 = 56 AND b.UNITNO = 56 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO2 = 12 AND b.UNITNO = 12 CREATE (a)-[:unit]->(b)"
+
+
+
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO3 = 56 AND b.UNITNO = 56 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO3 = 15 AND b.UNITNO = 15 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO3 = 61 AND b.UNITNO = 61 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO3 = 42 AND b.UNITNO = 42 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO3 = 39 AND b.UNITNO = 39 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO3 = 34 AND b.UNITNO = 34 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO3 = 25 AND b.UNITNO = 25 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO3 = 26 AND b.UNITNO = 26 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO3 = 27 AND b.UNITNO = 27 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO3 = 28 AND b.UNITNO = 28 CREATE (a)-[:unit]->(b)"
+
+
+
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO4 = 35 AND b.UNITNO = 35 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO4 = 36 AND b.UNITNO = 36 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO4 = 37 AND b.UNITNO = 37 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO4 = 38 AND b.UNITNO = 38 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO4 = 39 AND b.UNITNO = 39 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO4 = 26 AND b.UNITNO = 26 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO4 = 71 AND b.UNITNO = 71 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO4 = 72 AND b.UNITNO = 72 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO4 = 73 AND b.UNITNO = 73 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO4 = 74 AND b.UNITNO = 74 CREATE (a)-[:unit]->(b)"
+
+
+
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO5 = 51 AND b.UNITNO = 51 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO5 = 52 AND b.UNITNO = 52 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO5 = 53 AND b.UNITNO = 53 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO5 = 54 AND b.UNITNO = 54 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO5 = 55 AND b.UNITNO = 55 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO5 = 56 AND b.UNITNO = 56 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO5 = 28 AND b.UNITNO = 28 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO5 = 12 AND b.UNITNO = 12 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO5 = 60 AND b.UNITNO = 60 CREATE (a)-[:unit]->(b)"
+Neo4j on conn "MATCH (a:player), (b:unit) WHERE a.UNITNO5 = 70 AND b.UNITNO = 70 CREATE (a)-[:unit]->(b)"
+
+
+
+Neo4j on conn "MATCH (a:unit), (b:sphere) WHERE a.sphereno = 10 AND b.sphereno = 10 CREATE (a)-[:sphere]->(b)"
+Neo4j on conn "MATCH (a:unit), (b:sphere) WHERE a.sphereno = 40 AND b.sphereno = 40 CREATE (a)-[:sphere]->(b)"
+Neo4j on conn "MATCH (a:unit), (b:sphere) WHERE a.sphereno = 20 AND b.sphereno = 20 CREATE (a)-[:sphere]->(b)"
+Neo4j on conn "MATCH (a:unit), (b:sphere) WHERE a.sphereno = 30 AND b.sphereno = 30 CREATE (a)-[:sphere]->(b)"
+Neo4j on conn "MATCH (a:unit), (b:sphere) WHERE a.sphereno = 50 AND b.sphereno = 50 CREATE (a)-[:sphere]->(b)"
+Neo4j on conn "MATCH (a:unit), (b:sphere) WHERE a.sphereno = 60 AND b.sphereno = 60 CREATE (a)-[:sphere]->(b)"
+Neo4j on conn "MATCH (a:unit), (b:sphere) WHERE a.sphereno = 70 AND b.sphereno = 70 CREATE (a)-[:sphere]->(b)"
+Neo4j on conn "MATCH (a:unit), (b:sphere) WHERE a.sphereno = 80 AND b.sphereno = 80 CREATE (a)-[:sphere]->(b)"
+Neo4j on conn "MATCH (a:unit), (b:sphere) WHERE a.sphereno = 90 AND b.sphereno = 90 CREATE (a)-[:sphere]->(b)"
