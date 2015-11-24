@@ -105,6 +105,7 @@ e1.role = 'Executive Director' AND
 
 -- Page 36
 declare status NUMBER;
+        commentid NUMBER;
 BEGIN
 select F15_C3_Status_Code_status_id into status from F15_C3_RFE where ref_id = :P6_RFE_v2;
 
@@ -112,6 +113,16 @@ IF status <> 108 AND status <> 104 THEN
     update F15_C3_RFE
     set F15_C3_Status_Code_status_id = 103
     where ref_id = :P6_RFE_v2;
+    
+    insert into F15_C3_Sts_His values(F15_C3_Sts_His_seq.nextval, :P6_RFE_v2, 103, SYSDATE,null,null,null,null,null);
+    
+    commentid := F15_C3_Comment_seq.nextval;
+    
+    insert into F15_C3_Comment(comment_id, F15_C3_employee_emp_id, entry_date, comments)
+    VALUES(commentid, v('P1_EMP_v2'), SYSDATE, 'This RFE was recalled.');
+
+  insert into Relation_11(F15_C3_RFE_ref_id, F15_C3_Comment_comment_id)
+    VALUES(v('P6_RFE_v2'), commentid+1);
 END IF;
 
 END;
@@ -152,11 +163,13 @@ from F15_C3_RFE where ref_id = :P6_RFE_v2;
     END IF;
     
     
-     insert into F15_C3_Sts_His values(F15_C3_Sts_His_seq.nextval, :P6_RFE_v2, 101);
+     insert into F15_C3_Sts_His values(F15_C3_Sts_His_seq.nextval, :P6_RFE_v2, 101, SYSDATE,null,null,null,null,null);
 END;
+
 
 -- Page 37
 DECLARE statusid NUMBER;
+        commentid NUMBER;
 BEGIN
        update F15_C3_RFE
        set F15_C3_Status_Code_status_id = 102
@@ -165,18 +178,37 @@ BEGIN
     select F15_C3_Status_Code_status_id into statusid
         from F15_C3_RFE where ref_id = :P5_RFE_v2;
 
-    insert into F15_C3_Sts_His values(F15_C3_Sts_His_seq.nextval, :P5_RFE_v2, statusid);
+    insert into F15_C3_Sts_His values(F15_C3_Sts_His_seq.nextval, :P5_RFE_v2, statusid, SYSDATE,null,null,null,null,null);
+    
+    commentid := F15_C3_Comment_seq.nextval;
+    
+    insert into F15_C3_Comment(comment_id, F15_C3_employee_emp_id, entry_date, comments)
+    VALUES(commentid, v('P1_EMP_v2'), SYSDATE, 'This RFE was returned.');
+
+  insert into Relation_11(F15_C3_RFE_ref_id, F15_C3_Comment_comment_id)
+    VALUES(v('P6_RFE_v2'), commentid+1);
 
 END;
 
 DECLARE statusid NUMBER;
+        commentid NUMBER;
 BEGIN
 select F15_C3_Status_Code_status_id into statusid
-from F15_C3_RFE where ref_id = :P6_RFE_v2;
+from F15_C3_RFE where ref_id = :P5_RFE_v2;
     -- Submitted
         update F15_C3_RFE
         set F15_C3_Status_Code_status_id = 104
-        where ref_id = :P6_RFE_v2;
+        where ref_id = :P5_RFE_v2;
+        
+insert into F15_C3_Sts_His values(F15_C3_Sts_His_seq.nextval, :P5_RFE_v2, 104, SYSDATE,null,null,null,null,null);
+
+    commentid := F15_C3_Comment_seq.nextval;
+    
+    insert into F15_C3_Comment(comment_id, F15_C3_employee_emp_id, entry_date, comments)
+    VALUES(commentid, v('P1_EMP_v2'), SYSDATE, 'This RFE was rejected.');
+
+  insert into Relation_11(F15_C3_RFE_ref_id, F15_C3_Comment_comment_id)
+    VALUES(v('P6_RFE_v2'), commentid+1);
 END;
 
 DECLARE statusid NUMBER;
@@ -214,7 +246,7 @@ from F15_C3_RFE where ref_id = :P5_RFE_v2;
     select F15_C3_Status_Code_status_id into statusid
         from F15_C3_RFE where ref_id = :P5_RFE_v2;
 
-    insert into F15_C3_Sts_His values(F15_C3_Sts_His_seq.nextval, :P5_RFE_v2, statusid);
+    insert into F15_C3_Sts_His values(F15_C3_Sts_His_seq.nextval, :P5_RFE_v2, statusid, SYSDATE,null,null,null,null,null);
     
         -- Is return_for empty?
     select count(*) into duplicate from return_to r
