@@ -13,6 +13,8 @@ DROP TABLE F15_C3_Status_Code CASCADE CONSTRAINTS ;
 
 DROP TABLE F15_C3_Sts_His CASCADE CONSTRAINTS ;
 
+DROP TABLE return_to CASCADE CONSTRAINTS ;
+
 DROP TABLE F15_C3_Task CASCADE CONSTRAINTS ;
 
 DROP TABLE F15_C3_employee CASCADE CONSTRAINTS ;
@@ -42,7 +44,6 @@ ALTER TABLE F15_C3_Comment ADD CONSTRAINT F15_C3_Comment_PK PRIMARY KEY ( commen
 CREATE TABLE F15_C3_Document
   (
     doc_id            INTEGER NOT NULL ,
-    F15_C3_RFE_ref_id INTEGER ,
     filename          VARCHAR2 (255) ,
     file_mimetype     VARCHAR2 (20) ,
     file_charset      VARCHAR2 (25) ,
@@ -87,10 +88,18 @@ CREATE TABLE F15_C3_Sts_His
   (
     his_id            INTEGER NOT NULL ,
     F15_C3_RFE_ref_id INTEGER,
-    status_id INTEGER
+    status_id INTEGER,
+    his_date DATE
   ) ;
 ALTER TABLE F15_C3_Sts_His ADD CONSTRAINT F15_C3_Sts_His_PK PRIMARY KEY ( his_id ) ;
 
+CREATE TABLE return_to
+  (
+    his_id            INTEGER NOT NULL ,
+    F15_C3_RFE_ref_id INTEGER,
+    status_id INTEGER
+  ) ;
+ALTER TABLE return_to ADD CONSTRAINT return_to_PK PRIMARY KEY ( his_id ) ;
 
 CREATE TABLE F15_C3_Task
   (
@@ -143,8 +152,6 @@ ALTER TABLE contacts ADD CONSTRAINT contacts_PK PRIMARY KEY ( F15_C3_employee_em
 
 ALTER TABLE F15_C3_Comment ADD CONSTRAINT F15_C3_Comment_F15_C3_emp_FK FOREIGN KEY ( F15_C3_employee_emp_id ) REFERENCES F15_C3_employee ( emp_id ) ;
 
-ALTER TABLE F15_C3_Document ADD CONSTRAINT F15_C3_Document_F15_C3_RFE_FK FOREIGN KEY ( F15_C3_RFE_ref_id ) REFERENCES F15_C3_RFE ( ref_id ) ;
-
 ALTER TABLE F15_C3_RFE ADD CONSTRAINT F15_C3_RFE_F15_C3_Sts_Code_FK FOREIGN KEY ( F15_C3_Status_Code_status_id ) REFERENCES F15_C3_Status_Code ( status_id ) ;
 
 ALTER TABLE F15_C3_RFE ADD CONSTRAINT F15_C3_RFE_F15_C3_Task_FK FOREIGN KEY ( F15_C3_Task_task_id ) REFERENCES F15_C3_Task ( task_id ) ;
@@ -164,4 +171,3 @@ ALTER TABLE approvers ADD CONSTRAINT FK_ASS_11 FOREIGN KEY ( F15_C3_RFE_ref_id )
 ALTER TABLE contacts ADD CONSTRAINT FK_ASS_12 FOREIGN KEY ( F15_C3_employee_emp_id ) REFERENCES F15_C3_employee ( emp_id ) ;
 
 ALTER TABLE contacts ADD CONSTRAINT FK_ASS_13 FOREIGN KEY ( F15_C3_RFE_ref_id ) REFERENCES F15_C3_RFE ( ref_id ) ;
-

@@ -1,4 +1,9 @@
 -- Preload the tables with data
+TRUNCATE TABLE F15_C3_Document;
+TRUNCATE TABLE F15_C3_Comment;
+TRUNCATE TABLE rfe_to_doc;
+TRUNCATE TABLE Relation_11;
+TRUNCATE TABLE truncate table F15_C3_Sts_His;
 
 INSERT INTO F15_C3_Status_Code(status_id, effective_date, name, description, status_code) VALUES (DEFAULT,SYSDATE,'Entered', 'The RFE has been created but has not yet been submitted for approval.', 'A');
 INSERT INTO F15_C3_Status_Code(status_id, effective_date, name, description, status_code) VALUES (DEFAULT,SYSDATE,'Submitted', 'The RFE has been submitted to the Lab System Administrator for approval.', 'B');
