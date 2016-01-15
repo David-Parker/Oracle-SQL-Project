@@ -4,9 +4,9 @@ Built a database oriented application for a school district's course exception s
 
 ## Team members
 
- - Spencer Shadley
- - David Parker
- - Cheng Yuan Ma
+ - [Spencer Shadley](https://github.com/spencer-shadley)
+ - [David Parker](https://github.com/David-Parker)
+ - [Cheng (Jefferson) Yuan Ma](https://www.linkedin.com/in/chengyuanma?authType=NAME_SEARCH&authToken=CIsY&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CentityType%3AentityHistoryName%2CclickedEntityId%3Amynetwork_209734147%2Cidx%3A0)
  
 ## Links
 
